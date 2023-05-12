@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MSGF>
+  <NAME>RF0002MF</NAME>
+  <TEXT>Maintain Job</TEXT>
+  <CCSID>65535</CCSID>
+  <MSGD>
+    <MSGID>CON0001</MSGID>
+    <MESSAGE>
+      <MSG>Create Job</MSG>
+      <MSGPRM>*BLANKS-23-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0002</MSGID>
+    <MESSAGE>
+      <MSG>Change Job</MSG>
+      <MSGPRM>*BLANKS-23-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0003</MSGID>
+    <MESSAGE>
+      <MSG>Copy Job</MSG>
+      <MSGPRM>*BLANKS-24-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0004</MSGID>
+    <MESSAGE>
+      <MSG>Delete Job</MSG>
+      <MSGPRM>*BLANKS-23-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0005</MSGID>
+    <MESSAGE>
+      <MSG>Display Job</MSG>
+      <MSGPRM>*BLANKS-23-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0006</MSGID>
+    <MESSAGE>
+      <MSG>F3=Exit  F12=Cancel</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0007</MSGID>
+    <MESSAGE>
+      <MSG>Name</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0008</MSGID>
+    <MESSAGE>
+      <MSG>Please confirm deletion by pressing enter. Otherwise press F12.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0009</MSGID>
+    <MESSAGE>
+      <MSG>Create environment :</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0010</MSGID>
+    <MESSAGE>
+      <MSG>Job  . . . . . . . :</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0011</MSGID>
+    <MESSAGE>
+      <MSG>Description  . . . :</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0012</MSGID>
+    <MESSAGE>
+      <MSG>*YES, *NO</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0013</MSGID>
+    <MESSAGE>
+      <MSG>F3=Exit  F4=Prompt  F12=Cancel</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0014</MSGID>
+    <MESSAGE>
+      <MSG>Cancel, if ASP threshold exceeds  :</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0015</MSGID>
+    <MESSAGE>
+      <MSG>*YES, *NO</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0056</MSGID>
+    <MESSAGE>
+      <MSG>Job queue  . . . . :</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0057</MSGID>
+    <MESSAGE>
+      <MSG>Library  . . . . :</MSG>
+      <MSGPRM>*BLANKS-2-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0068</MSGID>
+    <MESSAGE>
+      <MSG>Name</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0069</MSGID>
+    <MESSAGE>
+      <MSG>Name, *LIBL, *CURLIB</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0007</MSGID>
+    <MESSAGE>
+      <MSG>No prompt for the requested field available.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+</MSGF>

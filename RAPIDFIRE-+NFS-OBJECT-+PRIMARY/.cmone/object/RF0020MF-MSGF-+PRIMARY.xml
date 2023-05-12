@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MSGF>
+  <NAME>RF0020MF</NAME>
+  <TEXT>Maintain Activity Schedule</TEXT>
+  <CCSID>65535</CCSID>
+  <MSGD>
+    <MSGID>CON0001</MSGID>
+    <MESSAGE>
+      <MSG>Maintain Activity Schedule</MSG>
+      <MSGPRM>*BLANKS-17-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0002</MSGID>
+    <MESSAGE>
+      <MSG>Display Activity Schedule</MSG>
+      <MSGPRM>*BLANKS-18-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0003</MSGID>
+    <MESSAGE>
+      <MSG>Type option and press enter.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0004</MSGID>
+    <MESSAGE>
+      <MSG>1=Set Activity ON/OFF</MSG>
+      <MSGPRM>*BLANKS-2-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0006</MSGID>
+    <MESSAGE>
+      <MSG>F3=Exit  F4=Prompt  F5=Refresh  F9=Retrieve  F12=Cancel  F24=More keys</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0008</MSGID>
+    <MESSAGE>
+      <MSG>( No positions available )</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0009</MSGID>
+    <MESSAGE>
+      <MSG>Opt.  ----- T I M E -----  Activity</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0010</MSGID>
+    <MESSAGE>
+      <MSG>Command</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0011</MSGID>
+    <MESSAGE>
+      <MSG>Job  . . . . . . . :</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0013</MSGID>
+    <MESSAGE>
+      <MSG>More ...</MSG>
+      <MSGPRM>*BLANKS-7-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0014</MSGID>
+    <MESSAGE>
+      <MSG>End</MSG>
+      <MSGPRM>*BLANKS-12-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0015</MSGID>
+    <MESSAGE>
+      <MSG>F17=Top  F18=Bottom  F24=More keys</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0001</MSGID>
+    <MESSAGE>
+      <MSG>The option is not valid.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0002</MSGID>
+    <MESSAGE>
+      <MSG>The top of the list has already been reached.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0003</MSGID>
+    <MESSAGE>
+      <MSG>The bottom of the list has already been reached.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0004</MSGID>
+    <MESSAGE>
+      <MSG>No prompt for the requested field available.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+</MSGF>

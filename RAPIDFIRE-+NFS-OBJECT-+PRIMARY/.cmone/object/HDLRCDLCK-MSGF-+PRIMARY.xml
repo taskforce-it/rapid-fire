@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MSGF>
+  <NAME>HDLRCDLCK</NAME>
+  <TEXT>Handle Record Lock</TEXT>
+  <CCSID>65535</CCSID>
+  <MSGD>
+    <MSGID>CON0001</MSGID>
+    <MESSAGE>
+      <MSG>!!! Interruption of processing !!!</MSG>
+      <MSGPRM>*BLANKS-11-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0002</MSGID>
+    <MESSAGE>
+      <MSG>At the moment the  processing can not be  continued, because  the user above</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0003</MSGID>
+    <MESSAGE>
+      <MSG>locks a record, witch is requested  by this program. As soon as the user has</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0004</MSGID>
+    <MESSAGE>
+      <MSG>finished his current  action the processing  can be resumed. If this  window</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0005</MSGID>
+    <MESSAGE>
+      <MSG>will not  disappeare  after  5 minutes,  so inform  the user  to finish  his</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0006</MSGID>
+    <MESSAGE>
+      <MSG>current action.</MSG>
+      <MSGPRM>*BLANKS-0-61</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0007</MSGID>
+    <MESSAGE>
+      <MSG>***</MSG>
+      <MSGPRM>*BLANKS-1</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0008</MSGID>
+    <MESSAGE>
+      <MSG>Record lock of user  . . . . :</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0009</MSGID>
+    <MESSAGE>
+      <MSG>*** Record lock ***</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+      <SECLVL>**********************************************************************  * Sie sperren  einen Datensatz, der  von Benutzer &amp;1 ange- *  * fordert wird. Bitte  beenden Sie ihre  aktuell anstehende  Aktion. *  **********************************************************************</SECLVL>
+      <SECLVLPRM>*BLANKS-2-0</SECLVLPRM>
+      <FMTS>
+        <FMT>
+          <TYPE>*QTDCHAR</TYPE>
+          <LENGTH>10</LENGTH>
+          <DECPOS>***</DECPOS>
+        </FMT>
+      </FMTS>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0010</MSGID>
+    <MESSAGE>
+      <MSG>Enter=Try to resume processing</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+</MSGF>

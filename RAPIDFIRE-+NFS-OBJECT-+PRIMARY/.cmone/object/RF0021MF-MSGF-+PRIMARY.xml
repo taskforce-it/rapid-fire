@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MSGF>
+  <NAME>RF0021MF</NAME>
+  <TEXT>Warnings</TEXT>
+  <CCSID>65535</CCSID>
+  <MSGD>
+    <MSGID>CON0001</MSGID>
+    <MESSAGE>
+      <MSG>! ! !   I M P O R T A N T   I N F O R M A T I O N   ! ! !</MSG>
+      <MSGPRM>*BLANKS-10-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0002</MSGID>
+    <MESSAGE>
+      <MSG>Important informations for the usage of Rapid Fire together with high</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0003</MSGID>
+    <MESSAGE>
+      <MSG>availability solutions like MIMIX and BUS/400, which are using journals for</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0004</MSGID>
+    <MESSAGE>
+      <MSG>the replication to a backup system.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0005</MSGID>
+    <MESSAGE>
+      <MSG>Rapid Fire is using so called shadow libraries for a Rapid Fire job. You can</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0006</MSGID>
+    <MESSAGE>
+      <MSG>create this shadow libraries on your own, or you can let Rapid Fire create</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0007</MSGID>
+    <MESSAGE>
+      <MSG>this shadow libraries. In every case you have to take care that this shadow</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0008</MSGID>
+    <MESSAGE>
+      <MSG>libraries are excluded from the replication to the backup system by your</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0009</MSGID>
+    <MESSAGE>
+      <MSG>HA-Solution.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0010</MSGID>
+    <MESSAGE>
+      <MSG>Rapid Fire is receiving the changes made to a file from a journal. Therefore</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0011</MSGID>
+    <MESSAGE>
+      <MSG>you have to take care that detached journal receivers will not be deleted for</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0012</MSGID>
+    <MESSAGE>
+      <MSG>at least one day. If you are using a HA-Solution you have to set up this in</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0013</MSGID>
+    <MESSAGE>
+      <MSG>your HA-Solution.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0014</MSGID>
+    <MESSAGE>
+      <MSG>If you are using Rapid Fire for SQL tables with GENERATED ALWAYS AS columns</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0015</MSGID>
+    <MESSAGE>
+      <MSG>the values of the GENERATED ALWAYS AS columns for each row in the table will</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0016</MSGID>
+    <MESSAGE>
+      <MSG>be regenerated. Don`t use Rapid Fire for SQL tables with GENERATED ALWAYS AS</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0017</MSGID>
+    <MESSAGE>
+      <MSG>columns if this causes problems in your application.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+</MSGF>

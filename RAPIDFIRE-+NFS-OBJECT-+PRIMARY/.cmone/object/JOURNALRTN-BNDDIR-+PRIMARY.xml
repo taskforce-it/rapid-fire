@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BNDDIR>
+  <NAME>JOURNALRTN</NAME>
+  <TEXT>Returncode of Exit Program for Command RCVJRNE</TEXT>
+  <ENTRIES>
+    <ENTRY>
+      <OBJECT>JOURNALRTN</OBJECT>
+      <LIBRARY>*LIBL</LIBRARY>
+      <TYPE>*SRVPGM</TYPE>
+      <ACTIVATION>*IMMED</ACTIVATION>
+    </ENTRY>
+  </ENTRIES>
+</BNDDIR>

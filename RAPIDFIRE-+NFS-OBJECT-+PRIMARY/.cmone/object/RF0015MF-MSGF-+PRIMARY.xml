@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MSGF>
+  <NAME>RF0015MF</NAME>
+  <TEXT>Maintain To Be Notified</TEXT>
+  <CCSID>65535</CCSID>
+  <MSGD>
+    <MSGID>CON0001</MSGID>
+    <MESSAGE>
+      <MSG>Create Subject To Be Notified</MSG>
+      <MSGPRM>*BLANKS-14-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0002</MSGID>
+    <MESSAGE>
+      <MSG>Change Subject To Be Notified</MSG>
+      <MSGPRM>*BLANKS-14-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0003</MSGID>
+    <MESSAGE>
+      <MSG>Copy Subject To Be Notified</MSG>
+      <MSGPRM>*BLANKS-15-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0004</MSGID>
+    <MESSAGE>
+      <MSG>Delete Subject To Be Notified</MSG>
+      <MSGPRM>*BLANKS-14-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0005</MSGID>
+    <MESSAGE>
+      <MSG>Display Subject To Be Notified</MSG>
+      <MSGPRM>*BLANKS-14-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0006</MSGID>
+    <MESSAGE>
+      <MSG>F3=Exit  F12=Cancel</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0007</MSGID>
+    <MESSAGE>
+      <MSG>Job  . . . . . . . :</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0008</MSGID>
+    <MESSAGE>
+      <MSG>Please confirm deletion by pressing enter. Otherwise press F12.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0009</MSGID>
+    <MESSAGE>
+      <MSG>User . . . . . . . :</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0010</MSGID>
+    <MESSAGE>
+      <MSG>Position . . . . . :</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0012</MSGID>
+    <MESSAGE>
+      <MSG>Type . . . . . . . :</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0013</MSGID>
+    <MESSAGE>
+      <MSG>F3=Exit  F4=Prompt  F12=Cancel</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0014</MSGID>
+    <MESSAGE>
+      <MSG>*USR, *MSGQ</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0015</MSGID>
+    <MESSAGE>
+      <MSG>Name, *SYSOPR</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0016</MSGID>
+    <MESSAGE>
+      <MSG>Name</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0017</MSGID>
+    <MESSAGE>
+      <MSG>Number</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0018</MSGID>
+    <MESSAGE>
+      <MSG>Message queue  . . :</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0019</MSGID>
+    <MESSAGE>
+      <MSG>Library  . . . . :</MSG>
+      <MSGPRM>*BLANKS-2-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0020</MSGID>
+    <MESSAGE>
+      <MSG>Name</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0021</MSGID>
+    <MESSAGE>
+      <MSG>Name, *LIBL, *CURLIB</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0007</MSGID>
+    <MESSAGE>
+      <MSG>No prompt for the requested field available.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+</MSGF>

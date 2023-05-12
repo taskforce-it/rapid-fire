@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MSGF>
+  <NAME>MNTFILE</NAME>
+  <TEXT>Maintain File</TEXT>
+  <CCSID>65535</CCSID>
+  <MSGD>
+    <MSGID>ERR0001</MSGID>
+    <MESSAGE>
+      <MSG>The position does already exist.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0002</MSGID>
+    <MESSAGE>
+      <MSG>The value in field &apos;Position&apos; is not valid.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0003</MSGID>
+    <MESSAGE>
+      <MSG>Invalid parameter values. Error = &amp;1.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+      <FMTS>
+        <FMT>
+          <TYPE>*CHAR</TYPE>
+          <LENGTH>256</LENGTH>
+          <DECPOS>***</DECPOS>
+        </FMT>
+      </FMTS>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0004</MSGID>
+    <MESSAGE>
+      <MSG>The action is only valid for jobs with status *RDY.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0005</MSGID>
+    <MESSAGE>
+      <MSG>The value in field &apos;File&apos; is not valid.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0006</MSGID>
+    <MESSAGE>
+      <MSG>The value in field &apos;Type&apos; is not valid.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0007</MSGID>
+    <MESSAGE>
+      <MSG>The action is only valid for files with &quot;Type&quot; *PHYSICAL.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0009</MSGID>
+    <MESSAGE>
+      <MSG>The value in field &apos;Copy program&apos; is not valid.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0010</MSGID>
+    <MESSAGE>
+      <MSG>For physical files the value *NONE is not allowed.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0011</MSGID>
+    <MESSAGE>
+      <MSG>For logical files only the value *NONE is allowed.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0012</MSGID>
+    <MESSAGE>
+      <MSG>The value in field &apos;Copy program - Library&apos; is not valid.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0013</MSGID>
+    <MESSAGE>
+      <MSG>The library has to be specified.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0014</MSGID>
+    <MESSAGE>
+      <MSG>The library must not be specified.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0015</MSGID>
+    <MESSAGE>
+      <MSG>The value in field &apos;Conversion program&apos; is not valid.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0016</MSGID>
+    <MESSAGE>
+      <MSG>For logical files only the value *NONE is allowed.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0017</MSGID>
+    <MESSAGE>
+      <MSG>The value in field &apos;Conversion program - Library&apos; is not valid.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0018</MSGID>
+    <MESSAGE>
+      <MSG>The library has to be specified.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0019</MSGID>
+    <MESSAGE>
+      <MSG>The library must not be specified.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0020</MSGID>
+    <MESSAGE>
+      <MSG>The action is only valid for jobs with &quot;Create environment&quot; *YES.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0021</MSGID>
+    <MESSAGE>
+      <MSG>Invalid parameter values. Error = Position has to be zero.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0022</MSGID>
+    <MESSAGE>
+      <MSG>&amp;1</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+      <FMTS>
+        <FMT>
+          <TYPE>*CHAR</TYPE>
+          <LENGTH>256</LENGTH>
+          <DECPOS>***</DECPOS>
+        </FMT>
+      </FMTS>
+    </MESSAGE>
+  </MSGD>
+</MSGF>

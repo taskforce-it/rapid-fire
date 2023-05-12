@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MSGF>
+  <NAME>CHKSTSE</NAME>
+  <TEXT>Check Status Entry</TEXT>
+  <CCSID>65535</CCSID>
+  <MSGD>
+    <MSGID>ERR0001</MSGID>
+    <MESSAGE>
+      <MSG>Invalid parameter values. Error = &amp;1.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+      <FMTS>
+        <FMT>
+          <TYPE>*CHAR</TYPE>
+          <LENGTH>256</LENGTH>
+          <DECPOS>***</DECPOS>
+        </FMT>
+      </FMTS>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0002</MSGID>
+    <MESSAGE>
+      <MSG>The option &quot;Reapply all changes&quot; is only valid in status *RUN and phase *APY-CHG.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0003</MSGID>
+    <MESSAGE>
+      <MSG>The option &quot;Display records with duplicate key&quot; is only valid in status *RUN.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+</MSGF>

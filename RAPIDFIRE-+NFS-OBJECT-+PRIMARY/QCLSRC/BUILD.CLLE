@@ -1,0 +1,144 @@
+     /*-------------------------------------------------------------------------------------------*/
+     /*                                                                                           */
+     /* Copyright (c) 2014 Task Force IT-Consulting GmbH, Waltrop (Germany)                       */
+     /* This software and the accompanying materials are made available                           */
+     /* under the terms of the GNU General Public License version 2.0 (GPLv2)                     */
+     /* which accompanies this distribution and is available at                                   */
+     /* http://www.gnu.org/licenses/gpl-2.0.html                                                  */
+     /*                                                                                           */
+     /*-------------------------------------------------------------------------------------------*/
+     /*                                                                                           */
+     /* Rapid Fire Build                                                                          */
+     /*                                                                                           */
+     /*-------------------------------------------------------------------------------------------*/
+     /*  >>PRE-COMPILER<<                                                                         */
+     /*    >>CRTCMD<< CRTBNDCL     PGM(&LI/&OB) +                                                 */
+     /*                              SRCFILE(&SL/&SF) SRCMBR(&SM);                                */
+     /*    >>IMPORTANT<<                                                                          */
+     /*      >>PARM<<  DBGVIEW(*ALL);                                                             */
+     /*      >>PARM<<  OPTION(*EVENTF);                                                           */
+     /*      >>PARM<<  TGTRLS(&TR);                                                               */
+     /*    >>END-IMPORTANT<<                                                                      */
+     /*    >>EXECUTE<<                                                                            */
+     /*  >>END-PRE-COMPILER<<                                                                     */
+     /*-------------------------------------------------------------------------------------------*/
+     /*  SQL for checking the procedures and functions                                            */
+     /*  select 'PROCEDURE' TYPE,                                                                 */
+     /*         substr(SPECIFIC_SCHEMA, 1, 20) SPECIFIC_SCHEMA,                                   */
+     /*         substr(ROUTINE_NAME, 1, 30) ROUTINE_NAME                                          */
+     /*  from qsys2.sysprocs                                                                      */
+     /*  where specific_schema = 'RFPRI'                                                          */
+     /*  union                                                                                    */
+     /*  select 'FUNCTION' TYPE,                                                                  */
+     /*         substr(SPECIFIC_SCHEMA, 1, 20) SPECIFIC_SCHEMA,                                   */
+     /*         substr(ROUTINE_NAME, 1, 30) ROUTINE_NAME                                          */
+     /*  from qsys2.sysfuncs                                                                      */
+     /*  where specific_schema = 'RFPRI'                                                          */
+     /*------------+--------+---------------------------------------------------------------------*/
+     /*   Date     I Progr. I Description                                                         */
+     /*------------+--------+---------------------------------------------------------------------*/
+     /* 13.02.2018 I   TR   I Program created                                                     */
+     /* 10.11.2019 I   TR   I Changed program to call BUILD_OWN and added status messages.        */
+     /* 17.12.2019 I   TR   I Re-added the accidentally removed CHGOBJOWN command for changing    */
+     /*            I        I the owner of the save file.                                         */
+     /*------------+--------+---------------------------------------------------------------------*/
+
+     /* Start */
+             PGM        PARM(&LIB &CPYSAVF)
+
+             DCL        VAR(&LIB) TYPE(*CHAR) LEN(10)
+             DCL        VAR(&CPYSAVF) TYPE(*CHAR) LEN(10)
+
+             DCL        VAR(&JRN) TYPE(*CHAR) LEN(10) VALUE('RAPIDFIRE')
+             DCL        VAR(&SAVF) TYPE(*CHAR) LEN(10) VALUE('RAPIDFIRE')
+             DCL        VAR(&TMPLIB) TYPE(*CHAR) LEN(10) VALUE('QTEMP')
+             DCL        VAR(&OWNER) TYPE(*CHAR) LEN(10) VALUE('QPGMR')
+
+             DCL        VAR(&FROMMBR) TYPE(*CHAR) LEN(100)
+             DCL        VAR(&TOSTMF) TYPE(*CHAR) LEN(100)
+
+             CHKOBJ     OBJ(&LIB/&JRN) OBJTYPE(*JRN)
+             MONMSG     MSGID(CPF9801) EXEC(DO) /* Journal does not exist */
+                RCVMSG     PGMQ(*SAME (*)) MSGTYPE(*LAST) RMV(*YES)
+                GOTO       CMDLBL(SKIP_DLT)
+             ENDDO
+
+             ENDJRNAP   FILE(*ALL) JRN(&LIB/&JRN)
+             MONMSG     MSGID(CPF0000)
+
+             ENDJRNPF   FILE(*ALL) JRN(&LIB/&JRN)
+             MONMSG     MSGID(CPF0000)
+
+             DLTJRN     JRN(&LIB/&JRN)
+             MONMSG     MSGID(CPF0000)
+
+             DLTJRNRCV  JRNRCV(&LIB/RAPID*) DLTOPT(*IGNINQMSG)
+             MONMSG     MSGID(CPF0000)
+
+SKIP_DLT:
+
+             CLRPFM     FILE(&LIB/ACTSCHD)
+             CLRPFM     FILE(&LIB/AREAS)
+             CLRPFM     FILE(&LIB/CHANGES)
+             CLRPFM     FILE(&LIB/CHANGESLOG)
+             CLRPFM     FILE(&LIB/CNVS)
+             CLRPFM     FILE(&LIB/COMMANDS)
+             CLRPFM     FILE(&LIB/FILES)
+             CLRPFM     FILE(&LIB/JOBS)
+             CLRPFM     FILE(&LIB/LIBLETYS)
+             CLRPFM     FILE(&LIB/LIBLS)
+             CLRPFM     FILE(&LIB/LIBRARIES)
+             CLRPFM     FILE(&LIB/MEMBERS)
+             CLRPFM     FILE(&LIB/RECORDS)
+             CLRPFM     FILE(&LIB/RFJOBS)
+             CLRPFM     FILE(&LIB/SQLLOG)
+             CLRPFM     FILE(&LIB/SQLTRACE)
+             CLRPFM     FILE(&LIB/SUBTOBENOT)
+
+             DLTF FILE(&LIB/EVF*)
+             MONMSG     MSGID(CPF2125) EXEC(DO) /* No objects deleted */
+                RMVMSG     PGMQ(*SAME (*)) CLEAR(*ALL)
+             ENDDO
+
+             CALL       PGM(CRTDRPSQL) PARM('*DROP' &LIB)
+
+             CHKOBJ     OBJ(&LIB/&SAVF) OBJTYPE(*FILE)
+             MONMSG     MSGID(CPF9801) EXEC(DO) /* Object not found */
+                RMVMSG     PGMQ(*SAME (*)) CLEAR(*ALL)
+                CRTSAVF FILE(&LIB/&SAVF) TEXT('Rapid Fire')
+                CHGOBJOWN  OBJ(&LIB/&SAVF) OBJTYPE(*FILE) +
+                           NEWOWN(QPGMR) CUROWNAUT(*REVOKE)
+             ENDDO
+
+             CALL       PGM(&LIB/BUILD_OWN) PARM(&LIB &TMPLIB &OWNER)
+
+             SNDPGMMSG  MSGID(CPF9897) MSGF(QCPFMSG) +
+                          MSGDTA('Saving Rapid Fire objects ...') +
+                          TOPGMQ(*EXT) TOMSGQ(*TOPGMQ) +
+                          MSGTYPE(*STATUS)
+
+             CLRSAVF FILE(&LIB/&SAVF)
+
+             SAVLIB     LIB(&LIB) DEV(*SAVF) SAVF(&LIB/&SAVF) +
+                          TGTRLS(V7R2M0) DTACPR(*HIGH)
+
+             IF         COND(&CPYSAVF *EQ '*YES') THEN(DO)
+
+                MD        DIR('/home/rapidfire')
+                MONMSG    MSGID(CPFA0A0)
+
+                CHGVAR    VAR(&FROMMBR) +
+                            VALUE('/QSYS.LIB/' *CAT &LIB *TCAT '.LIB/' *CAT &SAVF *TCAT '.FILE')
+                CHGVAR    VAR(&TOSTMF) +
+                            VALUE('/home/rapidfire/' *CAT &SAVF *TCAT '.SAVF')
+                CPYTOSTMF FROMMBR(&FROMMBR) TOSTMF(&TOSTMF) CVTDTA(*NONE) STMFOPT(*REPLACE)
+
+             ENDDO
+
+             SNDPGMMSG    MSG('Created Rapid Fire save file' *BCAT &SAVF *BCAT 'in +
+                               library' *BCAT &LIB *TCAT '.') TOPGMQ(*PRV (*CTLBDY)) +
+                               MSGTYPE(*INFO)
+
+     /* End */
+ STEP999:    ENDPGM
+

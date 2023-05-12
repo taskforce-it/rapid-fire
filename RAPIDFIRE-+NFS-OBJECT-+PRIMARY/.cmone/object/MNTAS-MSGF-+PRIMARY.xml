@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MSGF>
+  <NAME>MNTAS</NAME>
+  <TEXT>Maintain Activity Schedule</TEXT>
+  <CCSID>65535</CCSID>
+  <MSGD>
+    <MSGID>ERR0001</MSGID>
+    <MESSAGE>
+      <MSG>&amp;1</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+      <FMTS>
+        <FMT>
+          <TYPE>*CHAR</TYPE>
+          <LENGTH>256</LENGTH>
+          <DECPOS>***</DECPOS>
+        </FMT>
+      </FMTS>
+    </MESSAGE>
+  </MSGD>
+</MSGF>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MSGF>
+  <NAME>UNINSTALL</NAME>
+  <TEXT>Uninstall Rapid Fire</TEXT>
+  <CCSID>65535</CCSID>
+  <MSGD>
+    <MSGID>CON0001</MSGID>
+    <MESSAGE>
+      <MSG>Do you really want to uninstall the Rapid Fire library &amp;1? (Y/N):</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+      <FMTS>
+        <FMT>
+          <TYPE>*CHAR</TYPE>
+          <LENGTH>10</LENGTH>
+          <DECPOS>***</DECPOS>
+        </FMT>
+      </FMTS>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0002</MSGID>
+    <MESSAGE>
+      <MSG>Rapid Fire library &amp;1 successfully uninstalled. Press enter to continue.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+      <FMTS>
+        <FMT>
+          <TYPE>*CHAR</TYPE>
+          <LENGTH>10</LENGTH>
+          <DECPOS>***</DECPOS>
+        </FMT>
+      </FMTS>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0001</MSGID>
+    <MESSAGE>
+      <MSG>The library &amp;1 doesn`t exist.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+      <FMTS>
+        <FMT>
+          <TYPE>*CHAR</TYPE>
+          <LENGTH>10</LENGTH>
+          <DECPOS>***</DECPOS>
+        </FMT>
+      </FMTS>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0002</MSGID>
+    <MESSAGE>
+      <MSG>The library &amp;1 is no Rapid Fire library.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+      <FMTS>
+        <FMT>
+          <TYPE>*CHAR</TYPE>
+          <LENGTH>10</LENGTH>
+          <DECPOS>***</DECPOS>
+        </FMT>
+      </FMTS>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0003</MSGID>
+    <MESSAGE>
+      <MSG>The Rapid Fire library &amp;1 cannot be allocated. Enter WRKOBJLCK.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+      <FMTS>
+        <FMT>
+          <TYPE>*CHAR</TYPE>
+          <LENGTH>10</LENGTH>
+          <DECPOS>***</DECPOS>
+        </FMT>
+      </FMTS>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0004</MSGID>
+    <MESSAGE>
+      <MSG>The Rapid Fire library &amp;1 couldn`t be deleted completely. Enter WRKOBJLCK.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+      <FMTS>
+        <FMT>
+          <TYPE>*CHAR</TYPE>
+          <LENGTH>10</LENGTH>
+          <DECPOS>***</DECPOS>
+        </FMT>
+      </FMTS>
+    </MESSAGE>
+  </MSGD>
+</MSGF>

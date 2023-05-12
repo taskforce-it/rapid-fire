@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MSGF>
+  <NAME>MNTAREA</NAME>
+  <TEXT>Maintain Area</TEXT>
+  <CCSID>65535</CCSID>
+  <MSGD>
+    <MSGID>ERR0001</MSGID>
+    <MESSAGE>
+      <MSG>The area does already exist.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0002</MSGID>
+    <MESSAGE>
+      <MSG>The value in field &apos;Area&apos; is not valid.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0003</MSGID>
+    <MESSAGE>
+      <MSG>The value in field &apos;Library list&apos; is not valid.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0004</MSGID>
+    <MESSAGE>
+      <MSG>Invalid parameter values. Error = Area has to be blanks.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0005</MSGID>
+    <MESSAGE>
+      <MSG>The library list has not defined.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0006</MSGID>
+    <MESSAGE>
+      <MSG>The library has not defined.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0007</MSGID>
+    <MESSAGE>
+      <MSG>The library list has to be *NONE, if create environment is *NO.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0008</MSGID>
+    <MESSAGE>
+      <MSG>The value in field &apos;CCSID&apos; is not valid.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0009</MSGID>
+    <MESSAGE>
+      <MSG>Invalid parameter values. Error = &amp;1.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+      <FMTS>
+        <FMT>
+          <TYPE>*CHAR</TYPE>
+          <LENGTH>256</LENGTH>
+          <DECPOS>***</DECPOS>
+        </FMT>
+      </FMTS>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0010</MSGID>
+    <MESSAGE>
+      <MSG>&amp;1</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+      <FMTS>
+        <FMT>
+          <TYPE>*CHAR</TYPE>
+          <LENGTH>256</LENGTH>
+          <DECPOS>***</DECPOS>
+        </FMT>
+      </FMTS>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0011</MSGID>
+    <MESSAGE>
+      <MSG>The action is only valid for jobs with status *RDY.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0019</MSGID>
+    <MESSAGE>
+      <MSG>The value in field &apos;Library&apos; is not valid.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+</MSGF>

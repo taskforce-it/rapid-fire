@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MSGF>
+  <NAME>MNTJOB</NAME>
+  <TEXT>Maintain Job</TEXT>
+  <CCSID>65535</CCSID>
+  <MSGD>
+    <MSGID>ERR0001</MSGID>
+    <MESSAGE>
+      <MSG>The job does already exist.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0002</MSGID>
+    <MESSAGE>
+      <MSG>The value in field &apos;Job&apos; is not valid.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0003</MSGID>
+    <MESSAGE>
+      <MSG>The value in field &apos;Description&apos; is not valid.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0004</MSGID>
+    <MESSAGE>
+      <MSG>The value in field &apos;Create environment&apos; is not valid.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0005</MSGID>
+    <MESSAGE>
+      <MSG>Invalid parameter values. Error = &amp;1.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+      <FMTS>
+        <FMT>
+          <TYPE>*CHAR</TYPE>
+          <LENGTH>256</LENGTH>
+          <DECPOS>***</DECPOS>
+        </FMT>
+      </FMTS>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0006</MSGID>
+    <MESSAGE>
+      <MSG>The action is only valid for jobs with status *RDY.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0007</MSGID>
+    <MESSAGE>
+      <MSG>The action is only valid for jobs with status *RUN-PND, *RUN, *END-PND or *ABORT.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0008</MSGID>
+    <MESSAGE>
+      <MSG>The action is only valid for jobs with status *RUN.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0009</MSGID>
+    <MESSAGE>
+      <MSG>The action is only valid for jobs with status *END.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0010</MSGID>
+    <MESSAGE>
+      <MSG>The action is only valid for jobs with &quot;Create environment&quot; *YES.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0011</MSGID>
+    <MESSAGE>
+      <MSG>Invalid parameter values. Error = Job has to be blanks.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0012</MSGID>
+    <MESSAGE>
+      <MSG>The value in field &apos;Cancel, if ASP threshold exceeds&apos; is not valid.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0045</MSGID>
+    <MESSAGE>
+      <MSG>The value in field &apos;Job queue&apos; is not valid.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0048</MSGID>
+    <MESSAGE>
+      <MSG>The value in field &apos;Job queue - Library&apos; is not valid.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+</MSGF>
