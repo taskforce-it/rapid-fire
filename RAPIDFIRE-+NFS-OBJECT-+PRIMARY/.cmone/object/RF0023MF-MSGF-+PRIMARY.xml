@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MSGF>
+  <NAME>RF0023MF</NAME>
+  <TEXT>Fields with GENERATED clause</TEXT>
+  <CCSID>65535</CCSID>
+  <MSGD>
+    <MSGID>CON0001</MSGID>
+    <MESSAGE>
+      <MSG>Fields with GENERATED clause</MSG>
+      <MSGPRM>*BLANKS-42-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0002</MSGID>
+    <MESSAGE>
+      <MSG>Library    File       Field      Text</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0006</MSGID>
+    <MESSAGE>
+      <MSG>F5=Refresh  F10=Continue  F12=Cancel  F17=Top  F18=Bottom</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0008</MSGID>
+    <MESSAGE>
+      <MSG>( No positions available )</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0011</MSGID>
+    <MESSAGE>
+      <MSG>Job  . . . . . . . . . . . . :</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0013</MSGID>
+    <MESSAGE>
+      <MSG>More ...</MSG>
+      <MSGPRM>*BLANKS-7-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0014</MSGID>
+    <MESSAGE>
+      <MSG>End</MSG>
+      <MSGPRM>*BLANKS-12-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0019</MSGID>
+    <MESSAGE>
+      <MSG>! ! !   A T T E N T I O N   ! ! !</MSG>
+      <MSGPRM>*BLANKS-48-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0020</MSGID>
+    <MESSAGE>
+      <MSG>The Rapid Fire job contains files, which have fields with the SQL GENERATED clause. If you continue, then the values of the</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0021</MSGID>
+    <MESSAGE>
+      <MSG>fields with the SQL GENERATED clause will be regenerated for each record in the file. Don`t use Rapid Fire for files with the</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0022</MSGID>
+    <MESSAGE>
+      <MSG>SQL GENERATED clause for a field if this causes problems in your application.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0030</MSGID>
+    <MESSAGE>
+      <MSG>If this Rapid Fire job has been created by the Change Management System CMOne and ALL the fields listed below are handled by</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0031</MSGID>
+    <MESSAGE>
+      <MSG>a separate SQL script with the typcode IDYCOL, then you can ignore this message.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0001</MSGID>
+    <MESSAGE>
+      <MSG>The option is not valid.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0002</MSGID>
+    <MESSAGE>
+      <MSG>The top of the list has already been reached.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>ERR0003</MSGID>
+    <MESSAGE>
+      <MSG>The bottom of the list has already been reached.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+</MSGF>

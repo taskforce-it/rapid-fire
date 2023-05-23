@@ -75,6 +75,40 @@
         <TYPE>*PGM</TYPE>
       </BASE>
       <REFOBJ>
+        <OBJECT>FLDGENCLS</OBJECT>
+        <TYPE>*SRVPGM</TYPE>
+      </REFOBJ>
+      <USAGE>
+        <INPUT>*NO</INPUT>
+        <OUTPUT>*NO</OUTPUT>
+        <UPDATE>*NO</UPDATE>
+      </USAGE>
+      <AREA>*SYSTEM</AREA>
+      <RECREATE>***</RECREATE>
+    </REFERENCE>
+    <REFERENCE>
+      <BASE>
+        <OBJECT>RF0001PG</OBJECT>
+        <TYPE>*PGM</TYPE>
+      </BASE>
+      <REFOBJ>
+        <OBJECT>FLDGENCLS</OBJECT>
+        <TYPE>*UDFCOPY</TYPE>
+      </REFOBJ>
+      <USAGE>
+        <INPUT>*NO</INPUT>
+        <OUTPUT>*NO</OUTPUT>
+        <UPDATE>*NO</UPDATE>
+      </USAGE>
+      <AREA>*SYSTEM</AREA>
+      <RECREATE>***</RECREATE>
+    </REFERENCE>
+    <REFERENCE>
+      <BASE>
+        <OBJECT>RF0001PG</OBJECT>
+        <TYPE>*PGM</TYPE>
+      </BASE>
+      <REFOBJ>
         <OBJECT>JOB</OBJECT>
         <TYPE>*SRVPGM</TYPE>
       </REFOBJ>
@@ -602,6 +636,40 @@
         <TYPE>*PGM</TYPE>
       </BASE>
       <REFOBJ>
+        <OBJECT>RF0023PG</OBJECT>
+        <TYPE>*PGM</TYPE>
+      </REFOBJ>
+      <USAGE>
+        <INPUT>*NO</INPUT>
+        <OUTPUT>*NO</OUTPUT>
+        <UPDATE>*NO</UPDATE>
+      </USAGE>
+      <AREA>*SYSTEM</AREA>
+      <RECREATE>***</RECREATE>
+    </REFERENCE>
+    <REFERENCE>
+      <BASE>
+        <OBJECT>RF0001PG</OBJECT>
+        <TYPE>*PGM</TYPE>
+      </BASE>
+      <REFOBJ>
+        <OBJECT>RF0023PG</OBJECT>
+        <TYPE>*UDFCOPY</TYPE>
+      </REFOBJ>
+      <USAGE>
+        <INPUT>*NO</INPUT>
+        <OUTPUT>*NO</OUTPUT>
+        <UPDATE>*NO</UPDATE>
+      </USAGE>
+      <AREA>*SYSTEM</AREA>
+      <RECREATE>***</RECREATE>
+    </REFERENCE>
+    <REFERENCE>
+      <BASE>
+        <OBJECT>RF0001PG</OBJECT>
+        <TYPE>*PGM</TYPE>
+      </BASE>
+      <REFOBJ>
         <OBJECT>RMVERRMSG</OBJECT>
         <TYPE>*UDFCOPY</TYPE>
       </REFOBJ>
@@ -673,6 +741,20 @@
       </BASE>
       <REFSYM>
         <SYMBOL>EXCCMDLIN</SYMBOL>
+        <STYPE>*PROC</STYPE>
+        <USAGE>*IMPORT</USAGE>
+        <DEPSYM>***</DEPSYM>
+      </REFSYM>
+      <ATTRIBUTE>***</ATTRIBUTE>
+      <AREA>*SYSTEM</AREA>
+    </SYMBOL>
+    <SYMBOL>
+      <BASE>
+        <OBJECT>RF0001PG</OBJECT>
+        <TYPE>*PGM</TYPE>
+      </BASE>
+      <REFSYM>
+        <SYMBOL>FLDGENCLS_build</SYMBOL>
         <STYPE>*PROC</STYPE>
         <USAGE>*IMPORT</USAGE>
         <DEPSYM>***</DEPSYM>

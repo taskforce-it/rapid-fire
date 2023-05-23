@@ -262,6 +262,23 @@
           <TYPE>*PGM</TYPE>
         </BASE>
         <REFOBJ>
+          <OBJECT>FLDGENCLS</OBJECT>
+          <TYPE>*FILE</TYPE>
+        </REFOBJ>
+        <USAGE>
+          <INPUT>*NO</INPUT>
+          <OUTPUT>*NO</OUTPUT>
+          <UPDATE>*NO</UPDATE>
+        </USAGE>
+        <AREA>*SYSTEM</AREA>
+        <RECREATE>***</RECREATE>
+      </REFERENCE>
+      <REFERENCE>
+        <BASE>
+          <OBJECT>BUILD</OBJECT>
+          <TYPE>*PGM</TYPE>
+        </BASE>
+        <REFOBJ>
           <OBJECT>JOBS</OBJECT>
           <TYPE>*FILE</TYPE>
         </REFOBJ>

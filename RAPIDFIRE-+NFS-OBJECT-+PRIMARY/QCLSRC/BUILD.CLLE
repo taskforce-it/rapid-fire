@@ -94,6 +94,7 @@ SKIP_DLT:
              CLRPFM     FILE(&LIB/SQLLOG)
              CLRPFM     FILE(&LIB/SQLTRACE)
              CLRPFM     FILE(&LIB/SUBTOBENOT)
+             CLRPFM     FILE(&LIB/FLDGENCLS)
 
              DLTF FILE(&LIB/EVF*)
              MONMSG     MSGID(CPF2125) EXEC(DO) /* No objects deleted */
