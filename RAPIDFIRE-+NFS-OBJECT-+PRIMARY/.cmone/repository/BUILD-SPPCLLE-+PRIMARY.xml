@@ -279,6 +279,23 @@
           <TYPE>*PGM</TYPE>
         </BASE>
         <REFOBJ>
+          <OBJECT>IGNFGC</OBJECT>
+          <TYPE>*FILE</TYPE>
+        </REFOBJ>
+        <USAGE>
+          <INPUT>*NO</INPUT>
+          <OUTPUT>*NO</OUTPUT>
+          <UPDATE>*NO</UPDATE>
+        </USAGE>
+        <AREA>*SYSTEM</AREA>
+        <RECREATE>***</RECREATE>
+      </REFERENCE>
+      <REFERENCE>
+        <BASE>
+          <OBJECT>BUILD</OBJECT>
+          <TYPE>*PGM</TYPE>
+        </BASE>
+        <REFOBJ>
           <OBJECT>JOBS</OBJECT>
           <TYPE>*FILE</TYPE>
         </REFOBJ>
@@ -497,4 +514,5 @@
     </REFERENCES>
     <SYMBOLS>
     </SYMBOLS>
+    <TIMESTAMP>2023-06-29-16.43.27</TIMESTAMP>
   </CMONE>
