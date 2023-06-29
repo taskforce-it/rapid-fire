@@ -92,6 +92,23 @@
         <TYPE>*MODULE</TYPE>
       </BASE>
       <REFOBJ>
+        <OBJECT>IGNFGC</OBJECT>
+        <TYPE>*FILE</TYPE>
+      </REFOBJ>
+      <USAGE>
+        <INPUT>*YES</INPUT>
+        <OUTPUT>*NO</OUTPUT>
+        <UPDATE>*NO</UPDATE>
+      </USAGE>
+      <AREA>*SYSTEM</AREA>
+      <RECREATE>***</RECREATE>
+    </REFERENCE>
+    <REFERENCE>
+      <BASE>
+        <OBJECT>FLDGENCLS</OBJECT>
+        <TYPE>*MODULE</TYPE>
+      </BASE>
+      <REFOBJ>
         <OBJECT>QLEAWI</OBJECT>
         <TYPE>*SRVPGM</TYPE>
       </REFOBJ>
@@ -502,6 +519,48 @@
         <TYPE>*MODULE</TYPE>
       </BASE>
       <REFSYM>
+        <SYMBOL>IGNORE_FIELDS_WITH_GENERATED_CLAUSE/FILE</SYMBOL>
+        <STYPE>*FIELD</STYPE>
+        <USAGE>*IMPORT</USAGE>
+        <DEPSYM>***</DEPSYM>
+      </REFSYM>
+      <ATTRIBUTE>***</ATTRIBUTE>
+      <AREA>*SYSTEM</AREA>
+    </SYMBOL>
+    <SYMBOL>
+      <BASE>
+        <OBJECT>FLDGENCLS</OBJECT>
+        <TYPE>*MODULE</TYPE>
+      </BASE>
+      <REFSYM>
+        <SYMBOL>IGNORE_FIELDS_WITH_GENERATED_CLAUSE/JOB</SYMBOL>
+        <STYPE>*FIELD</STYPE>
+        <USAGE>*IMPORT</USAGE>
+        <DEPSYM>***</DEPSYM>
+      </REFSYM>
+      <ATTRIBUTE>***</ATTRIBUTE>
+      <AREA>*SYSTEM</AREA>
+    </SYMBOL>
+    <SYMBOL>
+      <BASE>
+        <OBJECT>FLDGENCLS</OBJECT>
+        <TYPE>*MODULE</TYPE>
+      </BASE>
+      <REFSYM>
+        <SYMBOL>IGNORE_FIELDS_WITH_GENERATED_CLAUSE/LIBRARY</SYMBOL>
+        <STYPE>*FIELD</STYPE>
+        <USAGE>*IMPORT</USAGE>
+        <DEPSYM>***</DEPSYM>
+      </REFSYM>
+      <ATTRIBUTE>***</ATTRIBUTE>
+      <AREA>*SYSTEM</AREA>
+    </SYMBOL>
+    <SYMBOL>
+      <BASE>
+        <OBJECT>FLDGENCLS</OBJECT>
+        <TYPE>*MODULE</TYPE>
+      </BASE>
+      <REFSYM>
         <SYMBOL>QSYS2.SYSCOLUMNS/COLUMN_TEXT</SYMBOL>
         <STYPE>*FIELD</STYPE>
         <USAGE>*IMPORT</USAGE>
@@ -637,5 +696,5 @@
       <AREA>*SYSTEM</AREA>
     </SYMBOL>
   </SYMBOLS>
-  <TIMESTAMP>2023-06-29-10.35.18</TIMESTAMP>
+  <TIMESTAMP>2023-06-29-16.19.39</TIMESTAMP>
 </CMONE>
