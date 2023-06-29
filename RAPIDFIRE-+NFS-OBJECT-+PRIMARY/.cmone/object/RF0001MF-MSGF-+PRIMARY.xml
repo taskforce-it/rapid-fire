@@ -172,6 +172,13 @@
     </MESSAGE>
   </MSGD>
   <MSGD>
+    <MSGID>CON0025</MSGID>
+    <MESSAGE>
+      <MSG>Internal Error:</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
     <MSGID>ERR0001</MSGID>
     <MESSAGE>
       <MSG>The option is not valid.</MSG>

@@ -4,7 +4,7 @@
   <TYPCODE>SPPSRVPGM</TYPCODE>
   <OCCURRENCE>*PRIMARY</OCCURRENCE>
   <SIGNATURES>
-    <SIGNATURE>00849389A4826DE2D3C3D5C5C7C4D3C6</SIGNATURE>
+    <SIGNATURE>758331CE772DFE4DD4B81D1E9F0622B4</SIGNATURE>
   </SIGNATURES>
   <DICTIONARY>
     <BASE>
@@ -27,7 +27,7 @@
         <TYPE>*SRVPGM</TYPE>
       </BASE>
       <REFOBJ>
-        <OBJECT>*N</OBJECT>
+        <OBJECT>FILESV01</OBJECT>
         <TYPE>*FILE</TYPE>
       </REFOBJ>
       <USAGE>
@@ -48,7 +48,7 @@
         <TYPE>*FILE</TYPE>
       </REFOBJ>
       <USAGE>
-        <INPUT>*NO</INPUT>
+        <INPUT>*YES</INPUT>
         <OUTPUT>*YES</OUTPUT>
         <UPDATE>*YES</UPDATE>
       </USAGE>
@@ -180,6 +180,23 @@
         <TYPE>*SRVPGM</TYPE>
       </BASE>
       <REFOBJ>
+        <OBJECT>QSQPTABL</OBJECT>
+        <TYPE>*FILE</TYPE>
+      </REFOBJ>
+      <USAGE>
+        <INPUT>*YES</INPUT>
+        <OUTPUT>*NO</OUTPUT>
+        <UPDATE>*NO</UPDATE>
+      </USAGE>
+      <AREA>*SYSTEM</AREA>
+      <RECREATE>***</RECREATE>
+    </REFERENCE>
+    <REFERENCE>
+      <BASE>
+        <OBJECT>FLDGENCLS</OBJECT>
+        <TYPE>*SRVPGM</TYPE>
+      </BASE>
+      <REFOBJ>
         <OBJECT>QSQROUTE</OBJECT>
         <TYPE>*PGM</TYPE>
       </REFOBJ>
@@ -242,6 +259,23 @@
       <AREA>*SYSTEM</AREA>
       <RECREATE>***</RECREATE>
     </REFERENCE>
+    <REFERENCE>
+      <BASE>
+        <OBJECT>FLDGENCLS</OBJECT>
+        <TYPE>*SRVPGM</TYPE>
+      </BASE>
+      <REFOBJ>
+        <OBJECT>SYSVARS</OBJECT>
+        <TYPE>*FILE</TYPE>
+      </REFOBJ>
+      <USAGE>
+        <INPUT>*YES</INPUT>
+        <OUTPUT>*NO</OUTPUT>
+        <UPDATE>*NO</UPDATE>
+      </USAGE>
+      <AREA>*SYSTEM</AREA>
+      <RECREATE>***</RECREATE>
+    </REFERENCE>
   </REFERENCES>
   <SYMBOLS>
     <SYMBOL>
@@ -258,5 +292,76 @@
       <ATTRIBUTE>***</ATTRIBUTE>
       <AREA>*SYSTEM</AREA>
     </SYMBOL>
+    <SYMBOL>
+      <BASE>
+        <OBJECT>FLDGENCLS</OBJECT>
+        <TYPE>*SRVPGM</TYPE>
+      </BASE>
+      <REFSYM>
+        <SYMBOL>FLDGENCLS_isFieldsWithGeneratedClause</SYMBOL>
+        <STYPE>*PROC</STYPE>
+        <USAGE>*EXPORT</USAGE>
+        <DEPSYM>***</DEPSYM>
+      </REFSYM>
+      <ATTRIBUTE>***</ATTRIBUTE>
+      <AREA>*SYSTEM</AREA>
+    </SYMBOL>
+    <SYMBOL>
+      <BASE>
+        <OBJECT>FLDGENCLS</OBJECT>
+        <TYPE>*SRVPGM</TYPE>
+      </BASE>
+      <REFSYM>
+        <SYMBOL>FLDGENCLS_isReplicationOverrideAuthorized</SYMBOL>
+        <STYPE>*PROC</STYPE>
+        <USAGE>*EXPORT</USAGE>
+        <DEPSYM>***</DEPSYM>
+      </REFSYM>
+      <ATTRIBUTE>***</ATTRIBUTE>
+      <AREA>*SYSTEM</AREA>
+    </SYMBOL>
+    <SYMBOL>
+      <BASE>
+        <OBJECT>FLDGENCLS</OBJECT>
+        <TYPE>*SRVPGM</TYPE>
+      </BASE>
+      <REFSYM>
+        <SYMBOL>FLDGENCLS_isReplicationOverrideAvailable</SYMBOL>
+        <STYPE>*PROC</STYPE>
+        <USAGE>*EXPORT</USAGE>
+        <DEPSYM>***</DEPSYM>
+      </REFSYM>
+      <ATTRIBUTE>***</ATTRIBUTE>
+      <AREA>*SYSTEM</AREA>
+    </SYMBOL>
+    <SYMBOL>
+      <BASE>
+        <OBJECT>FLDGENCLS</OBJECT>
+        <TYPE>*SRVPGM</TYPE>
+      </BASE>
+      <REFSYM>
+        <SYMBOL>FLDGENCLS_setFieldsWithGeneratedClause</SYMBOL>
+        <STYPE>*PROC</STYPE>
+        <USAGE>*EXPORT</USAGE>
+        <DEPSYM>***</DEPSYM>
+      </REFSYM>
+      <ATTRIBUTE>***</ATTRIBUTE>
+      <AREA>*SYSTEM</AREA>
+    </SYMBOL>
+    <SYMBOL>
+      <BASE>
+        <OBJECT>FLDGENCLS</OBJECT>
+        <TYPE>*SRVPGM</TYPE>
+      </BASE>
+      <REFSYM>
+        <SYMBOL>FLDGENCLS_setReplicationOverride</SYMBOL>
+        <STYPE>*PROC</STYPE>
+        <USAGE>*EXPORT</USAGE>
+        <DEPSYM>***</DEPSYM>
+      </REFSYM>
+      <ATTRIBUTE>***</ATTRIBUTE>
+      <AREA>*SYSTEM</AREA>
+    </SYMBOL>
   </SYMBOLS>
+  <TIMESTAMP>2023-06-29-10.18.52</TIMESTAMP>
 </CMONE>

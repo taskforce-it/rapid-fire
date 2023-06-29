@@ -62,35 +62,91 @@
   <MSGD>
     <MSGID>CON0020</MSGID>
     <MESSAGE>
-      <MSG>The Rapid Fire job contains files, which have fields with the SQL GENERATED clause. If you continue, then the values of the</MSG>
+      <MSG>The Rapid Fire job contains files, which have fields with the SQL GENERATED clause. If you use Rapid Fire for such files, then the</MSG>
       <MSGPRM>*BLANKS-0-0</MSGPRM>
     </MESSAGE>
   </MSGD>
   <MSGD>
     <MSGID>CON0021</MSGID>
     <MESSAGE>
-      <MSG>fields with the SQL GENERATED clause will be regenerated for each record in the file. Don`t use Rapid Fire for files with the</MSG>
+      <MSG>values of the fields with the SQL GENERATED clause will be regenerated for each record in the files. The current IBM i release</MSG>
       <MSGPRM>*BLANKS-0-0</MSGPRM>
     </MESSAGE>
   </MSGD>
   <MSGD>
     <MSGID>CON0022</MSGID>
     <MESSAGE>
-      <MSG>SQL GENERATED clause for a field if this causes problems in your application.</MSG>
+      <MSG>provides a feature to avoid this. This feature is controlled by the global variable REPLICATION_OVERRIDE. You can find a brief</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0023</MSGID>
+    <MESSAGE>
+      <MSG>description of this global variable here: https://www.ibm.com/support/pages/node/6828143 . The usage of this global variable is</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0024</MSGID>
+    <MESSAGE>
+      <MSG>protected by the function QIBM_DB_GENCOL_OVERRIDE. Currently you are NOT allowed to use the global variable REPLICATION_OVERRIDE.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0025</MSGID>
+    <MESSAGE>
+      <MSG>To be allowed to use the global variable REPLICATION_OVERRIDE a user with special authority *SECADM has to execute the following</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0026</MSGID>
+    <MESSAGE>
+      <MSG>command: CHGFCNUSG FCNID(QIBM_DB_GENCOL_OVERRIDE) USER(&lt;user-profile&gt;) USAGE(*ALLOWED). IF YOU CONTINUE, THEN THE VALUES WILL BE</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0027</MSGID>
+    <MESSAGE>
+      <MSG>REGENERATED. We advise you to cancel. You can continue if you really understand what this means and if this causes NO problems</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0028</MSGID>
+    <MESSAGE>
+      <MSG>in your application. It is your decision. Be warned. The wrong decision can destroy your entire application.</MSG>
       <MSGPRM>*BLANKS-0-0</MSGPRM>
     </MESSAGE>
   </MSGD>
   <MSGD>
     <MSGID>CON0030</MSGID>
     <MESSAGE>
-      <MSG>If this Rapid Fire job has been created by the Change Management System CMOne and ALL the fields listed below are handled by</MSG>
+      <MSG>The Rapid Fire job contains files, which have fields with the SQL GENERATED clause. If you use Rapid Fire for such files, then the</MSG>
       <MSGPRM>*BLANKS-0-0</MSGPRM>
     </MESSAGE>
   </MSGD>
   <MSGD>
     <MSGID>CON0031</MSGID>
     <MESSAGE>
-      <MSG>a separate SQL script with the typcode IDYCOL, then you can ignore this message.</MSG>
+      <MSG>values of the fields with the SQL GENERATED clause will be regenerated for each record in the files. IF YOU CONTINUE, THEN THE</MSG>
+      <MSGPRM>*BLANKS-0-1</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0032</MSGID>
+    <MESSAGE>
+      <MSG>VALUES WILL BE REGENERATED. We advise you to cancel. You can continue if you really understand what this means and if this causes</MSG>
+      <MSGPRM>*BLANKS-0-1</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0033</MSGID>
+    <MESSAGE>
+      <MSG>NO problems in your application. It is your decision. Be warned. The wrong decision can destroy your entire application.</MSG>
       <MSGPRM>*BLANKS-0-0</MSGPRM>
     </MESSAGE>
   </MSGD>

@@ -466,6 +466,34 @@
         <TYPE>*FILE</TYPE>
       </BASE>
       <REFSYM>
+        <SYMBOL>JOBS/JOBS/X1JOB</SYMBOL>
+        <STYPE>*FIELD</STYPE>
+        <USAGE>*IMPORT</USAGE>
+        <DEPSYM>RF0001DF/DSPF080W/DFJOB</DEPSYM>
+      </REFSYM>
+      <ATTRIBUTE>***</ATTRIBUTE>
+      <AREA>*SYSTEM</AREA>
+    </SYMBOL>
+    <SYMBOL>
+      <BASE>
+        <OBJECT>RF0001DF</OBJECT>
+        <TYPE>*FILE</TYPE>
+      </BASE>
+      <REFSYM>
+        <SYMBOL>JOBS/JOBS/X1JOB</SYMBOL>
+        <STYPE>*FIELD</STYPE>
+        <USAGE>*IMPORT</USAGE>
+        <DEPSYM>RF0001DF/DSPF080W/JOB</DEPSYM>
+      </REFSYM>
+      <ATTRIBUTE>***</ATTRIBUTE>
+      <AREA>*SYSTEM</AREA>
+    </SYMBOL>
+    <SYMBOL>
+      <BASE>
+        <OBJECT>RF0001DF</OBJECT>
+        <TYPE>*FILE</TYPE>
+      </BASE>
+      <REFSYM>
         <SYMBOL>JOBS/JOBS/X1PHS</SYMBOL>
         <STYPE>*FIELD</STYPE>
         <USAGE>*IMPORT</USAGE>
@@ -1488,6 +1516,76 @@
         <TYPE>*FILE</TYPE>
       </BASE>
       <REFSYM>
+        <SYMBOL>RF0001DF/DSPF080W/DFINTERR</SYMBOL>
+        <STYPE>*FIELD</STYPE>
+        <USAGE>*EXPORT</USAGE>
+        <DEPSYM>***</DEPSYM>
+      </REFSYM>
+      <ATTRIBUTE>A(60)</ATTRIBUTE>
+      <AREA>*SYSTEM</AREA>
+    </SYMBOL>
+    <SYMBOL>
+      <BASE>
+        <OBJECT>RF0001DF</OBJECT>
+        <TYPE>*FILE</TYPE>
+      </BASE>
+      <REFSYM>
+        <SYMBOL>RF0001DF/DSPF080W/DFJOB</SYMBOL>
+        <STYPE>*FIELD</STYPE>
+        <USAGE>*EXPORT</USAGE>
+        <DEPSYM>***</DEPSYM>
+      </REFSYM>
+      <ATTRIBUTE>A(10)</ATTRIBUTE>
+      <AREA>*SYSTEM</AREA>
+    </SYMBOL>
+    <SYMBOL>
+      <BASE>
+        <OBJECT>RF0001DF</OBJECT>
+        <TYPE>*FILE</TYPE>
+      </BASE>
+      <REFSYM>
+        <SYMBOL>RF0001DF/DSPF080W/DFJOB</SYMBOL>
+        <STYPE>*FIELD</STYPE>
+        <USAGE>*EXPORT</USAGE>
+        <DEPSYM>JOBS/JOBS/X1JOB</DEPSYM>
+      </REFSYM>
+      <ATTRIBUTE>***</ATTRIBUTE>
+      <AREA>*SYSTEM</AREA>
+    </SYMBOL>
+    <SYMBOL>
+      <BASE>
+        <OBJECT>RF0001DF</OBJECT>
+        <TYPE>*FILE</TYPE>
+      </BASE>
+      <REFSYM>
+        <SYMBOL>RF0001DF/DSPF080W/JOB</SYMBOL>
+        <STYPE>*FIELD</STYPE>
+        <USAGE>*EXPORT</USAGE>
+        <DEPSYM>***</DEPSYM>
+      </REFSYM>
+      <ATTRIBUTE>A(10):*ALIAS</ATTRIBUTE>
+      <AREA>*SYSTEM</AREA>
+    </SYMBOL>
+    <SYMBOL>
+      <BASE>
+        <OBJECT>RF0001DF</OBJECT>
+        <TYPE>*FILE</TYPE>
+      </BASE>
+      <REFSYM>
+        <SYMBOL>RF0001DF/DSPF080W/JOB</SYMBOL>
+        <STYPE>*FIELD</STYPE>
+        <USAGE>*EXPORT</USAGE>
+        <DEPSYM>JOBS/JOBS/X1JOB</DEPSYM>
+      </REFSYM>
+      <ATTRIBUTE>***</ATTRIBUTE>
+      <AREA>*SYSTEM</AREA>
+    </SYMBOL>
+    <SYMBOL>
+      <BASE>
+        <OBJECT>RF0001DF</OBJECT>
+        <TYPE>*FILE</TYPE>
+      </BASE>
+      <REFSYM>
         <SYMBOL>RF0001DF/DSPF999C/DFPGMQ</SYMBOL>
         <STYPE>*FIELD</STYPE>
         <USAGE>*EXPORT</USAGE>
@@ -1525,4 +1623,5 @@
       <AREA>*SYSTEM</AREA>
     </SYMBOL>
   </SYMBOLS>
+  <TIMESTAMP>2023-06-29-10.18.52</TIMESTAMP>
 </CMONE>

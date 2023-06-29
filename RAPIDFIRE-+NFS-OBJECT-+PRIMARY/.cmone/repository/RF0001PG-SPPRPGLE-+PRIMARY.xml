@@ -1314,6 +1314,34 @@
         <TYPE>*PGM</TYPE>
       </BASE>
       <REFSYM>
+        <SYMBOL>RF0001DF/DSPF080W/DFINTERR</SYMBOL>
+        <STYPE>*FIELD</STYPE>
+        <USAGE>*IMPORT</USAGE>
+        <DEPSYM>***</DEPSYM>
+      </REFSYM>
+      <ATTRIBUTE>***</ATTRIBUTE>
+      <AREA>*SYSTEM</AREA>
+    </SYMBOL>
+    <SYMBOL>
+      <BASE>
+        <OBJECT>RF0001PG</OBJECT>
+        <TYPE>*PGM</TYPE>
+      </BASE>
+      <REFSYM>
+        <SYMBOL>RF0001DF/DSPF080W/DFJOB</SYMBOL>
+        <STYPE>*FIELD</STYPE>
+        <USAGE>*IMPORT</USAGE>
+        <DEPSYM>***</DEPSYM>
+      </REFSYM>
+      <ATTRIBUTE>***</ATTRIBUTE>
+      <AREA>*SYSTEM</AREA>
+    </SYMBOL>
+    <SYMBOL>
+      <BASE>
+        <OBJECT>RF0001PG</OBJECT>
+        <TYPE>*PGM</TYPE>
+      </BASE>
+      <REFSYM>
         <SYMBOL>RF0001DF/DSPF999C/DFPGMQ</SYMBOL>
         <STYPE>*FIELD</STYPE>
         <USAGE>*IMPORT</USAGE>
@@ -1393,4 +1421,5 @@
       <AREA>*SYSTEM</AREA>
     </SYMBOL>
   </SYMBOLS>
+  <TIMESTAMP>2023-06-29-10.18.52</TIMESTAMP>
 </CMONE>

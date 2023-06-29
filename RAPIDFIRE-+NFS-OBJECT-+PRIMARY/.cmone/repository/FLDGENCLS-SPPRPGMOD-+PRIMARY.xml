@@ -24,23 +24,6 @@
         <TYPE>*MODULE</TYPE>
       </BASE>
       <REFOBJ>
-        <OBJECT>*N</OBJECT>
-        <TYPE>*FILE</TYPE>
-      </REFOBJ>
-      <USAGE>
-        <INPUT>*YES</INPUT>
-        <OUTPUT>*NO</OUTPUT>
-        <UPDATE>*NO</UPDATE>
-      </USAGE>
-      <AREA>*SYSTEM</AREA>
-      <RECREATE>***</RECREATE>
-    </REFERENCE>
-    <REFERENCE>
-      <BASE>
-        <OBJECT>FLDGENCLS</OBJECT>
-        <TYPE>*MODULE</TYPE>
-      </BASE>
-      <REFOBJ>
         <OBJECT>*NONE</OBJECT>
         <TYPE>*NONE</TYPE>
       </REFOBJ>
@@ -58,11 +41,28 @@
         <TYPE>*MODULE</TYPE>
       </BASE>
       <REFOBJ>
+        <OBJECT>FILESV01</OBJECT>
+        <TYPE>*FILE</TYPE>
+      </REFOBJ>
+      <USAGE>
+        <INPUT>*YES</INPUT>
+        <OUTPUT>*NO</OUTPUT>
+        <UPDATE>*NO</UPDATE>
+      </USAGE>
+      <AREA>*SYSTEM</AREA>
+      <RECREATE>***</RECREATE>
+    </REFERENCE>
+    <REFERENCE>
+      <BASE>
+        <OBJECT>FLDGENCLS</OBJECT>
+        <TYPE>*MODULE</TYPE>
+      </BASE>
+      <REFOBJ>
         <OBJECT>FLDGENCLS</OBJECT>
         <TYPE>*FILE</TYPE>
       </REFOBJ>
       <USAGE>
-        <INPUT>*NO</INPUT>
+        <INPUT>*YES</INPUT>
         <OUTPUT>*YES</OUTPUT>
         <UPDATE>*YES</UPDATE>
       </USAGE>
@@ -160,6 +160,23 @@
         <TYPE>*MODULE</TYPE>
       </BASE>
       <REFOBJ>
+        <OBJECT>QSQPTABL</OBJECT>
+        <TYPE>*FILE</TYPE>
+      </REFOBJ>
+      <USAGE>
+        <INPUT>*YES</INPUT>
+        <OUTPUT>*NO</OUTPUT>
+        <UPDATE>*NO</UPDATE>
+      </USAGE>
+      <AREA>*SYSTEM</AREA>
+      <RECREATE>***</RECREATE>
+    </REFERENCE>
+    <REFERENCE>
+      <BASE>
+        <OBJECT>FLDGENCLS</OBJECT>
+        <TYPE>*MODULE</TYPE>
+      </BASE>
+      <REFOBJ>
         <OBJECT>QSQROUTE</OBJECT>
         <TYPE>*PGM</TYPE>
       </REFOBJ>
@@ -212,6 +229,23 @@
       </BASE>
       <REFOBJ>
         <OBJECT>SYSCOLUMNS</OBJECT>
+        <TYPE>*FILE</TYPE>
+      </REFOBJ>
+      <USAGE>
+        <INPUT>*YES</INPUT>
+        <OUTPUT>*NO</OUTPUT>
+        <UPDATE>*NO</UPDATE>
+      </USAGE>
+      <AREA>*SYSTEM</AREA>
+      <RECREATE>***</RECREATE>
+    </REFERENCE>
+    <REFERENCE>
+      <BASE>
+        <OBJECT>FLDGENCLS</OBJECT>
+        <TYPE>*MODULE</TYPE>
+      </BASE>
+      <REFOBJ>
+        <OBJECT>SYSVARS</OBJECT>
         <TYPE>*FILE</TYPE>
       </REFOBJ>
       <USAGE>
@@ -287,6 +321,20 @@
       </BASE>
       <REFSYM>
         <SYMBOL>FIELDS_WITH_GENERATED_CLAUSE/LIBRARY</SYMBOL>
+        <STYPE>*FIELD</STYPE>
+        <USAGE>*IMPORT</USAGE>
+        <DEPSYM>***</DEPSYM>
+      </REFSYM>
+      <ATTRIBUTE>***</ATTRIBUTE>
+      <AREA>*SYSTEM</AREA>
+    </SYMBOL>
+    <SYMBOL>
+      <BASE>
+        <OBJECT>FLDGENCLS</OBJECT>
+        <TYPE>*MODULE</TYPE>
+      </BASE>
+      <REFSYM>
+        <SYMBOL>FIELDS_WITH_GENERATED_CLAUSE/REPLICATION_OVERRIDE</SYMBOL>
         <STYPE>*FIELD</STYPE>
         <USAGE>*IMPORT</USAGE>
         <DEPSYM>***</DEPSYM>
@@ -384,6 +432,76 @@
         <TYPE>*MODULE</TYPE>
       </BASE>
       <REFSYM>
+        <SYMBOL>FLDGENCLS_isFieldsWithGeneratedClause</SYMBOL>
+        <STYPE>*PROC</STYPE>
+        <USAGE>*EXPORT</USAGE>
+        <DEPSYM>***</DEPSYM>
+      </REFSYM>
+      <ATTRIBUTE>***</ATTRIBUTE>
+      <AREA>*SYSTEM</AREA>
+    </SYMBOL>
+    <SYMBOL>
+      <BASE>
+        <OBJECT>FLDGENCLS</OBJECT>
+        <TYPE>*MODULE</TYPE>
+      </BASE>
+      <REFSYM>
+        <SYMBOL>FLDGENCLS_isReplicationOverrideAuthorized</SYMBOL>
+        <STYPE>*PROC</STYPE>
+        <USAGE>*EXPORT</USAGE>
+        <DEPSYM>***</DEPSYM>
+      </REFSYM>
+      <ATTRIBUTE>***</ATTRIBUTE>
+      <AREA>*SYSTEM</AREA>
+    </SYMBOL>
+    <SYMBOL>
+      <BASE>
+        <OBJECT>FLDGENCLS</OBJECT>
+        <TYPE>*MODULE</TYPE>
+      </BASE>
+      <REFSYM>
+        <SYMBOL>FLDGENCLS_isReplicationOverrideAvailable</SYMBOL>
+        <STYPE>*PROC</STYPE>
+        <USAGE>*EXPORT</USAGE>
+        <DEPSYM>***</DEPSYM>
+      </REFSYM>
+      <ATTRIBUTE>***</ATTRIBUTE>
+      <AREA>*SYSTEM</AREA>
+    </SYMBOL>
+    <SYMBOL>
+      <BASE>
+        <OBJECT>FLDGENCLS</OBJECT>
+        <TYPE>*MODULE</TYPE>
+      </BASE>
+      <REFSYM>
+        <SYMBOL>FLDGENCLS_setFieldsWithGeneratedClause</SYMBOL>
+        <STYPE>*PROC</STYPE>
+        <USAGE>*EXPORT</USAGE>
+        <DEPSYM>***</DEPSYM>
+      </REFSYM>
+      <ATTRIBUTE>***</ATTRIBUTE>
+      <AREA>*SYSTEM</AREA>
+    </SYMBOL>
+    <SYMBOL>
+      <BASE>
+        <OBJECT>FLDGENCLS</OBJECT>
+        <TYPE>*MODULE</TYPE>
+      </BASE>
+      <REFSYM>
+        <SYMBOL>FLDGENCLS_setReplicationOverride</SYMBOL>
+        <STYPE>*PROC</STYPE>
+        <USAGE>*EXPORT</USAGE>
+        <DEPSYM>***</DEPSYM>
+      </REFSYM>
+      <ATTRIBUTE>***</ATTRIBUTE>
+      <AREA>*SYSTEM</AREA>
+    </SYMBOL>
+    <SYMBOL>
+      <BASE>
+        <OBJECT>FLDGENCLS</OBJECT>
+        <TYPE>*MODULE</TYPE>
+      </BASE>
+      <REFSYM>
         <SYMBOL>QSYS2.SYSCOLUMNS/COLUMN_TEXT</SYMBOL>
         <STYPE>*FIELD</STYPE>
         <USAGE>*IMPORT</USAGE>
@@ -454,6 +572,48 @@
         <TYPE>*MODULE</TYPE>
       </BASE>
       <REFSYM>
+        <SYMBOL>QSYS2.SYSVARS/VARIABLE_NAME</SYMBOL>
+        <STYPE>*FIELD</STYPE>
+        <USAGE>*IMPORT</USAGE>
+        <DEPSYM>***</DEPSYM>
+      </REFSYM>
+      <ATTRIBUTE>***</ATTRIBUTE>
+      <AREA>*SYSTEM</AREA>
+    </SYMBOL>
+    <SYMBOL>
+      <BASE>
+        <OBJECT>FLDGENCLS</OBJECT>
+        <TYPE>*MODULE</TYPE>
+      </BASE>
+      <REFSYM>
+        <SYMBOL>QSYS2.SYSVARS/VARIABLE_SCHEMA</SYMBOL>
+        <STYPE>*FIELD</STYPE>
+        <USAGE>*IMPORT</USAGE>
+        <DEPSYM>***</DEPSYM>
+      </REFSYM>
+      <ATTRIBUTE>***</ATTRIBUTE>
+      <AREA>*SYSTEM</AREA>
+    </SYMBOL>
+    <SYMBOL>
+      <BASE>
+        <OBJECT>FLDGENCLS</OBJECT>
+        <TYPE>*MODULE</TYPE>
+      </BASE>
+      <REFSYM>
+        <SYMBOL>SETIGNORENODATA</SYMBOL>
+        <STYPE>*PROC</STYPE>
+        <USAGE>*IMPORT</USAGE>
+        <DEPSYM>***</DEPSYM>
+      </REFSYM>
+      <ATTRIBUTE>***</ATTRIBUTE>
+      <AREA>*SYSTEM</AREA>
+    </SYMBOL>
+    <SYMBOL>
+      <BASE>
+        <OBJECT>FLDGENCLS</OBJECT>
+        <TYPE>*MODULE</TYPE>
+      </BASE>
+      <REFSYM>
         <SYMBOL>SETIGNOREWARNINGS</SYMBOL>
         <STYPE>*PROC</STYPE>
         <USAGE>*IMPORT</USAGE>
@@ -477,4 +637,5 @@
       <AREA>*SYSTEM</AREA>
     </SYMBOL>
   </SYMBOLS>
+  <TIMESTAMP>2023-06-29-10.18.52</TIMESTAMP>
 </CMONE>
