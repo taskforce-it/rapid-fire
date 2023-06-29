@@ -385,9 +385,19 @@ DCL-PROC FLDGENCLS_setReplicationOverride EXPORT;
     p_Result INT(10);      // <-- Result
   END-PI;
 
-  // Set Replication Override
+  DCL-S l_SQL CHAR(256);
+
+  // Create statement
+  l_SQL =
+    'SET QSYS2.REPLICATION_OVERRIDE = ' + p_Value;
+
+  // Prepare statement
   Exec SQL
-    Set QSYS2.REPLICATION_OVERRIDE = :p_Value;
+    Prepare Set_Rep_Ovr From :l_SQL;
+
+  // Execute statement
+  Exec SQL
+    Execute Set_Rep_Ovr;
   setIgnoreWarnings();
   If Not SqlCheckState(sqlState);
 
