@@ -13,7 +13,7 @@
   <MSGD>
     <MSGID>CON0002</MSGID>
     <MESSAGE>
-      <MSG>Important information for the usage of Rapid Fire together with high</MSG>
+      <MSG>Important informations for the usage of Rapid Fire together with high</MSG>
       <MSGPRM>*BLANKS-0-0</MSGPRM>
     </MESSAGE>
   </MSGD>
@@ -91,6 +91,34 @@
     <MSGID>CON0013</MSGID>
     <MESSAGE>
       <MSG>your HA-Solution.</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0014</MSGID>
+    <MESSAGE>
+      <MSG>If you are using Rapid Fire for SQL tables with GENERATED ALWAYS AS columns</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0015</MSGID>
+    <MESSAGE>
+      <MSG>the values of the GENERATED ALWAYS AS columns for each row in the table will</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0016</MSGID>
+    <MESSAGE>
+      <MSG>be regenerated. Don`t use Rapid Fire for SQL tables with GENERATED ALWAYS AS</MSG>
+      <MSGPRM>*BLANKS-0-0</MSGPRM>
+    </MESSAGE>
+  </MSGD>
+  <MSGD>
+    <MSGID>CON0017</MSGID>
+    <MESSAGE>
+      <MSG>columns if this causes problems in your application.</MSG>
       <MSGPRM>*BLANKS-0-0</MSGPRM>
     </MESSAGE>
   </MSGD>
