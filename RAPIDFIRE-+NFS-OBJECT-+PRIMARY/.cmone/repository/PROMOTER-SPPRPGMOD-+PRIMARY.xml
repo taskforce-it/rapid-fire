@@ -109,6 +109,40 @@
         <TYPE>*MODULE</TYPE>
       </BASE>
       <REFOBJ>
+        <OBJECT>CVTDATE</OBJECT>
+        <TYPE>*PGM</TYPE>
+      </REFOBJ>
+      <USAGE>
+        <INPUT>*NO</INPUT>
+        <OUTPUT>*NO</OUTPUT>
+        <UPDATE>*NO</UPDATE>
+      </USAGE>
+      <AREA>*SYSTEM</AREA>
+      <RECREATE>***</RECREATE>
+    </REFERENCE>
+    <REFERENCE>
+      <BASE>
+        <OBJECT>PROMOTER</OBJECT>
+        <TYPE>*MODULE</TYPE>
+      </BASE>
+      <REFOBJ>
+        <OBJECT>CVTDATE</OBJECT>
+        <TYPE>*UDFCOPY</TYPE>
+      </REFOBJ>
+      <USAGE>
+        <INPUT>*NO</INPUT>
+        <OUTPUT>*NO</OUTPUT>
+        <UPDATE>*NO</UPDATE>
+      </USAGE>
+      <AREA>*SYSTEM</AREA>
+      <RECREATE>***</RECREATE>
+    </REFERENCE>
+    <REFERENCE>
+      <BASE>
+        <OBJECT>PROMOTER</OBJECT>
+        <TYPE>*MODULE</TYPE>
+      </BASE>
+      <REFOBJ>
         <OBJECT>ERRC0100</OBJECT>
         <TYPE>*UDFCOPY</TYPE>
       </REFOBJ>
@@ -3503,4 +3537,5 @@
       <AREA>*SYSTEM</AREA>
     </SYMBOL>
   </SYMBOLS>
+  <TIMESTAMP>2023-07-21-11.37.53</TIMESTAMP>
 </CMONE>
